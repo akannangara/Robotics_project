@@ -33,7 +33,7 @@ def run_train(test_train):
 	env = bulletworld(["d"], test_train)
 	nr_games = int(sys.argv[3])
 	agent = Agent(gamma=0.99, epsilon=1.0, alpha=0.0005, input_dims=3,
-				n_actions=11, mem_size=1000000, batch_size=10, epsilon_end=0.01)
+				n_actions=11, mem_size=1000000, batch_size=2, epsilon_end=0.01)
 	scores = []
 	eps_history = []
 	for i in range (nr_games):
@@ -64,7 +64,7 @@ def run_test(test_train):
 	env = bulletworld(["d"], test_train)
 	#define alpha as 0.005?
 	agent = Agent(gamma=0.99, epsilon=1.0, alpha=0.0005, input_dims=3,
-				n_actions=11, mem_size=1000000, batch_size=10, epsilon_end=0.01)
+				n_actions=11, mem_size=1000000, batch_size=2, epsilon_end=0.01)
 	agent.load_model()
 	observation = env.car.getState()
 	score = 0

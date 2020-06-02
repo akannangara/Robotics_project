@@ -32,7 +32,7 @@ class bulletworld:
 		self.stepCounter =0
 		#self.cameraTopDown()
 		if self.test_train == 0:
-			self.createObject() #FIXME DO I NEED THIS?
+			self.createObject()
 		if self.debug:
 			print("finished constructing bullet world")
 		self.states = []
