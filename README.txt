@@ -21,3 +21,8 @@ drive around the circular track, run the command:
 To test the trained car using the trained DQN model on the oval
 track, run the command:
 	python main.py d dqn_test
+	
+
+The code found in yetiborg.py we were not able to test
+due to trouble installing keras and tensorflow on our
+YetiBorg.
